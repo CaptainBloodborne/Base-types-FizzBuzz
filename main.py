@@ -20,4 +20,6 @@ def get_fizzbuzz_list(n: int) -> ListType:
             fizzbuzz_list.append("Buzz")
         if num % 3 == 0:
             fizzbuzz_list.append("Fizz")
+        else:
+            fizzbuzz_list.append(num)
     return fizzbuzz_list
