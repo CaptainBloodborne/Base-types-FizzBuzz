@@ -23,6 +23,3 @@ def get_fizzbuzz_list(n: int) -> ListType:
         else:
             fizzbuzz_list.append(num)
     return fizzbuzz_list
-
-
-print(get_fizzbuzz_list(100))
