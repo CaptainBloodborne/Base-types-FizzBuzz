@@ -16,10 +16,13 @@ def get_fizzbuzz_list(n: int) -> ListType:
     for num in range(1, n + 1):
         if num % 15 == 0:
             fizzbuzz_list.append("FizzBuzz")
-        if num % 5 == 0:
-            fizzbuzz_list.append("Buzz")
-        if num % 3 == 0:
+        elif num % 3 == 0:
             fizzbuzz_list.append("Fizz")
+        elif num % 5 == 0:
+            fizzbuzz_list.append("Buzz")
         else:
             fizzbuzz_list.append(num)
     return fizzbuzz_list
+
+
+print(get_fizzbuzz_list(100))
