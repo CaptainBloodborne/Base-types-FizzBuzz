@@ -14,7 +14,7 @@ def get_fizzbuzz_list(n: int) -> ListType:
     """
     fizzbuzz_list = []
     for num in range(1, n + 1):
-        if num % 15:
+        if num % 15 == 0:
             fizzbuzz_list.append("FizzBuzz")
         if num % 5 == 0:
             fizzbuzz_list.append("Buzz")
