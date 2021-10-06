@@ -1,4 +1,4 @@
-from typing import Union, List
+from typing import List, Union
 
 ListType = List[Union[int, str]]
 
@@ -12,4 +12,12 @@ def get_fizzbuzz_list(n: int) -> ListType:
     a `Buzz` word into the list. If the number is divided both by 3 and 5 the function puts
     `FizzBuzz` into the list.
     """
-    return []
+    fizzbuzz_list = []
+    for num in range(1, n + 1):
+        if num % 15:
+            fizzbuzz_list.append("FizzBuzz")
+        if num % 5 == 0:
+            fizzbuzz_list.append("Buzz")
+        if num % 3 == 0:
+            fizzbuzz_list.append("Fizz")
+    return fizzbuzz_list
